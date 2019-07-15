@@ -1,0 +1,179 @@
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #d4cfcf;
+    background-color: #2187dd;
+    color: white;
+}
+
+.row.content {height: 200px}
+.navbar-nav a{
+    color: white;
+}
+.nav li a:hover{
+    background-color: transparent;
+}
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;} 
+}
+.color-green{
+    color: #2f8d88;
+}
+.color-red{
+    color: red;
+}
+.color-white{
+    color: white;
+}
+.color-dark-green{
+    color:#005a56;
+}
+.three-col .col-sm-3{
+    border:1px solid #d4cece;
+    background-color: #fff0e4;
+}
+.width-100{
+    width: 100%;
+}
+.width-80{
+    width: 80%;
+}
+.float-left{
+    float: left;
+}
+.pm-1{
+    border:1px solid #cccccc;
+    padding: 1% 1%;
+}
+.pm-2{
+    padding: 1% 1%;
+}
+.color-sonicsilver{
+    color: #757575;
+}
+.font-size-150{
+    font-size: 150%;
+}
+.font-size-120{
+    font-size: 120%;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.margin-top-15{
+    margin-top: 15%;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    background-color: black;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border:1px solid grey;
+    background-color: #ccc;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.margin-20{
+    margin-top: 20%;
+}
+.margin-top-min-5{
+    margin-top: -5%;
+}
+.msg-btn{
+    width: 20%;
+    padding: 1% 1%;
+}
