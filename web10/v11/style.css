@@ -1,0 +1,120 @@
+body
+{
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    background-color: background: #348F50;
+    background: -webkit-linear-gradient(to left, #348F50 , #56B4D3); 
+    background: linear-gradient(to left, #348F50 , #56B4D3);
+    /*background-color: white;*/
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5% 5%;
+}
+a{
+    cursor:pointer;
+    color: black;
+    text-decoration: none;
+}
+.lead{
+    color: black;
+    font-weight:200;
+}
+span {
+    font-weight: 400;
+}
+.navbar {
+    background-color: rgba(15,15,15,0.9);
+}
+
+.navbar a {
+    color: black;
+    font-weight: 200;
+}
+.over-poster img{
+    width:100%;
+    padding-top: 25px;
+}
+.search{
+    background-color:transparent;
+    color:rgb(5,5,5);
+    font-size: 1.25em;
+    cursor:pointer;
+}
+.search i{
+    width:40px;
+}
+.rating {
+    color:rgba(255,215,0,0.9);
+    display:none;
+}
+.movies {
+    margin:0;
+    padding:0;
+}
+.tiles img{
+    width: 100%;
+    border-radius: 4px;
+    border: 3px solid #161616;
+    cursor: pointer;
+}
+.tagline{
+    font-weight:100;
+}
+.tiles img:hover {
+    width: 100%;
+    border-radius: 4px;
+    border: 3px solid #4d4dff;
+    opacity: 0.4;
+    background: #FFFFFF;
+}
+
+.overview {
+    padding: -10px 0 10px 0;
+}
+.overview .poster{
+    padding-top: 20px;
+    width:100%;
+    color: black;
+    height: auto;
+    border-radius:4px;
+    overflow: hidden;
+}
+.runtime{
+    font-size:0.5em;
+    font-weight:200;
+    color:black;
+}
+.exit{
+    position: absolute;
+    top:-25px;
+    left: 20px;
+    color:rgba(255,102,102,0.9);
+    font-size: 2em;
+    font-weight:100;
+    cursor:pointer;
+}
+input
+{
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: transparent;
+    border: 1px solid #0000005c;
+}
+.search_btn {
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: 1% 1%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #419e8a;
+    border: 1px solid #0000002e;
+    cursor: pointer;
+}
+.jumbotron{
+    background-color: transparent;
+}

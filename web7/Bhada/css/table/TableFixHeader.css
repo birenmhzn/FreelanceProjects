@@ -1,0 +1,16 @@
+/* Styles go here for fixed dashboard table. */
+.table-cont{
+  /**make table can scroll**/
+  max-height: 300px;
+  overflow: auto;
+  padding: 0% 1%;
+  /** add some style**/
+  /*padding: 2px;
+  margin: 20px 5px;*/
+}
+thead{
+  background-color: #ddd;
+}
+.tbody tr:hover td{
+    background-color: #ddddddb8;
+}

@@ -1,0 +1,7 @@
+
+$r =['array','(',')','{','}','[',']','"','int','>',"string","array"];
+   $g1 = str_replace($r, '', $s);
+   $g = str_replace("=", ' =', $g1);
+   $h = explode("failure =",$g);
+   $j = $h[1];
+   $a = explode("canonical_ids =",$j);

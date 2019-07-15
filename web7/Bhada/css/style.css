@@ -1,0 +1,87 @@
+.border-black{
+	border: 1px solid black;
+}
+.background-color-light-sky-blue{
+	background-color: #d5f4fb87;
+}
+.border-blue{
+	border: 1px solid blue;
+}
+.border-bottom-grey{
+	border-bottom: 1px solid #dcdbdbc7;
+}
+.border-left-royalblue-4{
+	border-left: 4px solid #4e73df;
+}
+.border-left-pacificblue-4{
+	border-left: 4px solid #36b9cc;
+}
+.border-left-bright-pink-4{
+	border-left: 4px solid #df4ecd;
+}
+.border-left-soft-red-4{
+	border-left: 4px solid #df4e4e;
+}
+.border-left-soft-yellow-green-4{
+	border-left: 4px solid #C2DF4E;
+}
+.border-left-vivid-cyan-4{
+	border-left: 4px solid #00FFD0;
+}
+.border-left-limegreen-4{
+	border-left: 4px solid #3fcc3b;
+}
+.box-shadow-bottom{
+	box-shadow: 3px 6px #dcdbdbc7;
+}
+.padding-2-2{
+	padding: 2% 2%;
+}
+.border-radius-5{
+	border-radius: 5px;
+}
+.font-weight-bold{
+	font-weight: bold;
+}
+.float-left{
+	float: left;
+}
+.margin-top-10{
+	margin-top: 15%;
+}
+.color-sonicsilver{
+	color: #757575;
+}
+.font-size-150{
+	font-size: 150%;
+}
+.font-size-120{
+	font-size: 120%;
+}
+.font-weight-bold{
+	font-weight: bold;
+}
+.color-black{
+	color: black;
+}
+.border-radius-50{
+	border-radius: 50px;
+}
+.margin-top-min-6{
+	margin-top: -6%;
+}
+.margin-left-5{
+	margin-left: 5%;
+}
+.color-light-grey{
+	color: #5a5c68;
+}
+.hover-curser:hover{
+	cursor: pointer;
+}
+.background-color-transparent{
+	background-color: transparent;
+}
+.color-transparent{
+	color: transparent;
+}
