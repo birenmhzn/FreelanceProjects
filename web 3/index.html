@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+	<center>
+		<img src="img/logo.png" width="10%"><h1 class="s-color-red"><b>Travel Centre</b></h1><hr>
+		<div class="container" id="index">
+			<center>
+				<h1>Personal Information</h1><hr><br>
+				<form onsubmit="return validateForm()" name="myForm" action="https://tau.usq.edu.au/courses/CSC2406/reflect.php" method="post">
+					<input required required class="inloc" type="text" name="name" placeholder="Enter Your Name"><p id="pname"></p><br>
+					<input required class="inloc" type="text" name="address" placeholder="Enter Your Adddress"><p id="paddress"></p><br>
+					<input required class="inloc" type="email" name="email" placeholder="Enter Your Email"><p id="pemail"></p><br>
+					<input required class="inloc" type="date" name="dob"><p id="pdob"></p><br>
+					<input required class="inloc" type="text" name="occupation" placeholder="Enter Your Occupation"><p id="poccupation"></p><br>
+					<select class="inloc" name="gender">
+						<option value="gender">GENDER</option>
+						<option value="male">MALE</option>
+						<option value="female">FEMALE</option>
+					</select><p id="pgender"></p><br>
+
+
+					<center>
+						<h1>Have A Partner ? <input required type="checkbox" id="myCheck"  onclick="partner()"></h1><br>
+						<div id="hide-partner" class="hide">
+							<input required class="inloc" type="text" name="partner_name" placeholder="Enter Partner Name"><p id="ppartnername"></p><br>
+							<input required class="inloc" type="date" name="partner_dob"><p id="ppartnerdob"></p><br>
+							<input required class="inloc" type="text" name="partner_occupation" placeholder="Enter Partner Occupation"><p id="ppartneroccupation"></p>
+							<br>
+							<select class="inloc" name="partner_gender">
+								<option value="gender">GENDER</option>
+								<option value="male">MALE</option>
+								<option value="female">FEMALE</option>
+							</select><p id="ppartnergender"></p>
+							<center>
+								<h1>Children ? </h1><select name="children" onChange="display_child_div()" id="display_child_div1" class="inloc s-width"  >
+										<option value="0"  onclick="display_child_div()">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select><br>						
+								<div id="child-group">
+									<div id="child-group1"></div><br>
+									<div id="child-group2-1"></div><br>
+									<div id="child-group2-2"></div><br>
+									<div id="child-group3-1"></div><br>
+									<div id="child-group3-2"></div><br>
+									<div id="child-group3-3"></div><br>
+									<div id="child-group4-1"></div><br>
+									<div id="child-group4-2"></div><br>
+									<div id="child-group4-3"></div><br>
+									<div id="child-group4-4"></div>
+								</div>
+							</center>
+						</div>
+					</center>
+
+					
+
+					<center>
+						<h1>Prefered Travel Date ? </h1>
+						<input required class="inloc" type="date" name="prefered_travel_date"  ><br><br>
+						<h1>Budget Range ? </h1>
+						<select class="inloc">
+							<option value="1000-2000">1000-2000</option>
+							<option value="3000-4000">3000-4000</option>
+							<option value="5000-6000">5000-6000</option>
+							<option value="7000-8000">7000-8000</option>
+							<option value="9000-10000">9000-10000</option>
+							<option value="More_than_1_Lav">More than 1 Lav</option>
+						</select><br><br>
+						<h3>How active? 
+						want to be travelling all the time? Need rest days? Rest days how often? Enjoy strenous activities? Sedentary? </h3>
+						<textarea  required  class="inloc" rows="3" name="textarea" name="how_active"></textarea><p id="phowactive"></p><br><br>
+					</center>
+					<br><br>
+					<button class="button" onclick="display_preferred_accommodation()" value="Submit">Submit</button>
+			</center>
+		</div>
+
+		<!-- ******************************************************************************************* -->
+
+		<div class="hide" id="preferred_accommodation">
+			<div class="container">
+				<center>
+					<h1>Preferred Accommodation</h1><hr><br>
+						<h1>Prefered Hotel ? </h1>
+						<select class="inloc" name="preferred_accommodation_room"  >
+							<option value=""></option>
+							<option value="Single_room">Single room</option>
+							<option value="Shared_room">Shared room</option>
+							<option value="3star">3 Star</option>
+							<option value="5star">5 Star</option>
+							<option value="7star">7 Star</option>						
+						</select><p id="preferred_accommodation_room"></p><br><br>
+
+						<h1>Bed and Breakfast with ? </h1>
+						<select class="inloc" name="preferred_accommodation_bed_breakfast_with"  >
+							<option value=""></option>
+							<option value="Bathroom">Bathroom</option>
+							<option value="Shared_Bathroom">Shared_Bathroom</option>					
+						</select><p id="preferred_accommodation_bed_breakfast_with"></p><br><br>
+						<h2>Student Accommodation ?&nbsp;&nbsp;<input required name="student_accommodation" type="checkbox" id="myCheck"></h2>
+						<h2>Backpacker's Accommodation ?&nbsp;&nbsp;<input required name="backpacker-accommodation" type="checkbox" id="myCheck"></h2>
+						<br><br>
+						<button class="button" onclick="preferred_modes_of_travel()" value="Submit">Submit</button>
+				</center>
+			</div>
+		</div>
+
+		<!-- ******************************************************************************************* -->
+		
+		<div class="hide" id="preferred_modes_of_travel">
+			<div class="container">
+				<center>
+					<h1>Preferred Modes of Travel</h1><hr><br>
+						<h1>Air</h1>
+						<select class="inloc" name="preferred_modes_of_travel_air"  >
+							<option value=""></option>
+							<option value="Jet">Jet</option>
+							<option value="Turbo-Prop">Turbo-Prop</option>
+							<option value="Helicopter">Helicopter</option>					
+						</select><p id="preferred_modes_of_travel_air"></p><br><br>
+						<h1>Water</h1>
+						<select class="inloc" name="preferred_modes_of_travel_water"  >
+							<option value=""></option>
+							<option value="Cruise">Cruise</option>
+							<option value="Sail">Sail</option>
+							<option value="Barge">Barge</option>					
+							<option value="Small">Small</option>					
+							<option value="Large">Large</option>					
+						</select><p id="preferred_modes_of_travel_water"></p><br><br>
+
+						<h1>Other ? </h1>
+						<h2>Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"  ></h2>
+						<h2>Bus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"></h2>
+						<h2>Car&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"></h2>
+						<h2>Horse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"></h2>
+						<h2>Donkey/Mule&nbsp;<input required type="radio" name="travel_mode"></h2>
+						<h2>Camel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"></h2>
+						<h2>Llama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"></h2>
+						<h2>Walking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"></h2>
+						<h2>Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input required type="radio" name="travel_mode"></h2>
+						<br><br>
+						<button class="button" onclick="preferred_travel_environment()" value="Submit">Submit</button>
+				</center>
+			</div>
+		</div>
+
+		<!-- ******************************************************************************************* -->
+		
+		<div class="hide" id="preferred_travel_environment">
+			<div class="container">
+				<center>
+					<h1>Preferred Destinations</h1><hr><br>
+						<h1>Africa</h1>
+						<select class="inloc" name="preferred_destination_africa"  >
+							<option value=""></option>
+							<option value="Eastern">Eastern</option>
+							<option value="Middle">Middle</option>
+							<option value="Northen">Northen</option>
+							<option value="Western">Western</option>
+							<option value="Southern">Southern</option>						
+						</select><p id="preferred_destination_africa"></p><br><br>
+
+						<h1>Asia</h1>
+						<select class="inloc" name="preferred_destination_asia"  >
+							<option value=""></option>
+							<option value="India">India</option>
+							<option value="Malaysia">Malaysia</option>
+							<option value="Japan">Japan</option>
+							<option value="North_Korea">North Korea</option>
+							<option value="Turkmenistan">Turkmenistan</option>	
+							<option value="Nepal">SouNepalthern</option>						
+						</select><p id="preferred_destination_asia"></p><br><br>
+
+						<h1>Central America </h1>
+						<select class="inloc" name="preferred_destination_central_america"  >
+							<option value=""></option>
+							<option value="Mexico">Mexico</option>
+							<option value="Honduras">Honduras</option>
+							<option value="Panama">Panama</option>					
+						</select><p id="preferred_destination_central_america"></p><br><br>
+
+						<h1>Europe</h1>
+						<select class="inloc" name="preferred_destination_europe"  >
+							<option value=""></option>
+							<option value="Russia">Russia</option>
+							<option value="Iceland">Iceland</option>
+							<option value="Belarus">Belarus</option>	
+							<option value="Norway">Norway</option>	
+							<option value="Switzerland">Switzerland</option>	
+							<option value="United_Kingdom">United Kingdom</option>					
+						</select><p id="preferred_destination_europe"></p><br><br>
+
+						<h1>Europe Union</h1>
+						<select class="inloc" name="preferred_destination_europe_union"  >
+							<option value=""></option>
+							<option value="Belgium">Belgium</option>
+							<option value="France">France</option>
+							<option value="Spain">Spain</option>	
+							<option value="Sweden">Sweden</option>	
+							<option value="Ireland">Ireland</option>					
+						</select><p id="preferred_destination_europe_union"></p><br><br>
+
+						<h1>Middle East </h1>
+						<select class="inloc" name="preferred_destination_middle_east"  >
+							<option value=""></option>
+							<option value="Bahrain">Bahrain</option>
+							<option value="Iraq">Iraq</option>
+							<option value="Syria">Syria</option>	
+							<option value="Yemen">Yemen</option>						
+						</select><p id="preferred_destination_middle_east"></p><br><br>
+
+						<h1>North America  </h1>
+						<select class="inloc" name="preferred_destination_north_america"  >
+							<option value=""></option>
+							<option value="Canada">Canada</option>
+							<option value="Greenland">Greenland</option>
+							<option value="U.S.A.">U.S.A.</option>						
+						</select><p id="preferred_destination_north_america"></p><br><br>
+
+						<h1>Oceania </h1>
+						<select class="inloc" name="preferred_destination_oceania"  >
+							<option value=""></option>
+							<option value="Papua_new_guinea">Papua new guinea</option>
+							<option value="Samoa">Samoa</option>
+							<option value="New_zealand">New zealand</option>
+							<option value="Micronesia">Micronesia</option>
+							<option value="Australia">Australia</option>						
+						</select><p id="preferred_destination_oceania"></p><br><br>
+
+						<h1>South America </h1>
+						<select class="inloc" name="preferred_destination_south_america"  >
+							<option value=""></option>
+							<option value="Bolivia">Bolivia</option>
+							<option value="Peru">Peru</option>
+							<option value="Colombia">Colombia</option>
+							<option value="Venezeula">Venezeula</option>						
+						</select><p id="preferred_destination_south_america"></p><br><br>
+
+						<h1>The Caribbean </h1>
+						<select class="inloc" name="preferred_destination_the_caribbean"  >
+							<option value=""></option>
+							<option value="Cuba">Cuba</option>
+							<option value="Barbados">Barbados</option>
+							<option value="Jamaica">Jamaica</option>
+							<option value="Curacao">Curacao</option>						
+						</select><p id="preferred_destination_the_caribbean"></p><br><br>
+						<br><br>
+						<input required class="button" type="submit" name="submit" value="Submit">
+					</form>
+				</center>
+			</div>
+		</div>
+	</center>
+</body>
+</html>

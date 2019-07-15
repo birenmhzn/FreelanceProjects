@@ -1,0 +1,80 @@
+body{	/*style css code for body tag*/
+	background-color: white;
+    text-decoration-color: #0000c8;
+    color: #0000c8;	
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.container{
+	width: 30%;
+	border: 0px solid grey;
+}
+.inloc{ /*css code for input tag and textarea tags*/
+    width: 86%;
+    border: none;
+    border-bottom: 2px solid blue;    
+    padding: 2% 2%;
+    background-color: white;
+    opacity: 1;
+    border-radius: 3%;
+    margin-top: 5%;
+    font-size: 105%;
+    font-weight: bold;
+    font-family: "Arial", cursive, sans-serif;
+    border-top: 1px solid #80808066;
+    border-right: 1px solid #80808066;
+    border-left: 1px solid #80808066;
+}
+.inloc::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+.datepicker{/*css code for datepicker tag*/
+    /*padding-top: 5%;
+    padding-bottom: 4%;*/
+    width: 40%;
+    padding: 5% 4%;
+    border-bottom: 2px solid blue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    border-radius: 4%;
+    font-family: "Arial", cursive, sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+.datepicker::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+.button {/*css code for button tag*/
+    border-bottom: 2px solid blue;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #ffffcc; 
+							  
+}
+
+.hide {/*css code to hide content like div*/
+  display: none;
+}
+.s-width{
+	width: 20%;
+}
+.s-color-green{
+	color: darkgreen;
+}

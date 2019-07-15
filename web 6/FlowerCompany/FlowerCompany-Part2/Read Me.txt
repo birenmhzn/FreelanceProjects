@@ -1,0 +1,33 @@
+----> Hi
+----> Read Me file for this website project.
+----> HTML * CSS * PHP
+
+$: Whole code that used is self written code not copy pasted from any website.
+
+$: Images that are used to developed this website project are copyright free and free to download.
+
+$: All images are downloaded from www.pixabay.com.
+
+$: Used HTML, CSS and PHP website development programming languages to developed this website project.
+
+$: Here PHP is server side scripting language used to developed website.
+
+$: In this pebsite project 11 PHP pages and 1 CSS file used.
+
+$: 12 images are used out of 13 images.
+
+$: config.php file contains PhpMyAdmin Connection, Which is located inside SqlPhpPages Folder.
+
+$: Login/Logout Session used in website, Also used session Time-Out function.
+
+$: functions.php file contains Session Time-Out function, Which is located inside SqlPhpPages Folder. 
+
+$: There is four HTML pages and one css file used to developed website.
+
+$: Update and Delete Function also used in website. The respective code inside the UpdateDelete.php File.
+
+$: flowercompany.sql also there.
+
+$: Used 2 Databses one for storing User Datails and second for storing Purchase Product Details.
+
+$: File size is 1.33 MB.

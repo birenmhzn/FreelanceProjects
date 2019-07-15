@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html><!-- html tag starts here-->
+<head><!-- head tag start here -->
+	<title>Homepage</title>
+    <link href="css/style.css" rel="stylesheet"><!-- link to css file which is inside css folder -->
+    <script src="js/script.js" type="text/javascript"></script><!-- javascript file which is inside js folder -->
+</head><!-- head tag start here which containes all css and javascript data and also title and other SEO content written 			between head tag-->
+<body><!-- body tag start here -->
+	<center><!-- outer center tag start here -->
+		<img src="img/logo.png" width="10%"><!-- Logo of website -->
+		<h1 class="s-color-red"><b>Travel Centre</b></h1><hr>
+		<div class="container" id="index"> <!-- part 1 has id "index" -->
+			<h2><b>Part 1/4</b></h2><!-- Part 1 out of 4 -->
+			<center><!-- inner center tag start here -->
+				<h1>Personal Information</h1><hr><br>
+				<form name="myForm" action="https://tau.usq.edu.au/courses/CSC2406/reflect.php" method="post">
+					<input required  class="inloc" id="name" type="text" name="name" placeholder="Enter Your Name"><p id="pname"></p><br><!-- input tag for user name -->
+					<input required class="inloc" type="text" id="address" name="address" placeholder="Enter Your Address"><p id="paddress"></p><br><!-- input tag for address -->
+					<input required class="inloc" type="email" id="email" name="email" placeholder="Enter Your Email"><p id="pemail"></p><br><!-- input tag for user email -->
+					<input required class="inloc" type="date" id="dob" name="dob"><p id="pdob"></p><br><!-- input tag for dob  -->
+					<input required class="inloc" type="text" id="occupation" name="occupation" placeholder="Enter Your Occupation"><p id="poccupation"></p><br><!-- input tag for user occupation -->
+					<select class="inloc" name="gender" id="gender"><!-- select tag for gender -->
+						<option value="gender">GENDER</option>
+						<option value="male">MALE</option>
+						<option value="female">FEMALE</option>
+					</select><p id="pgender"></p><br>
+
+
+					<center>
+						<h1>Married? <input type="checkbox" id="marriedCheck"  onclick="partner()"></h1><br>
+						<div id="hide-partner" class="hide">
+							<input  class="inloc" id="partner_name" type="text" name="partner_name" placeholder="Enter Partner Name"><p id="ppartnername"></p><br><!-- input tag for partner name -->
+							<input  class="inloc" id="partner_dob" type="date" name="partner_dob"><p id="ppartnerdob"></p><br><!-- input tag for partner dob -->
+							<input  class="inloc" id="partner_occupation" type="text" name="partner_occupation" placeholder="Enter Partner Occupation"><p id="ppartneroccupation"></p><!-- input tag for partner occupation -->
+							<br>
+							<select class="inloc" name="partner_gender" id="partner_gender"><!-- select tag for partner gender -->
+								<option value="gender">GENDER</option>
+								<option value="male">MALE</option>
+								<option value="female">FEMALE</option>
+							</select><p id="ppartnergender"></p>
+							<center>
+								<h1>Children ? </h1><select name="children" onChange="display_child_div()" id="display_child_div1" class="inloc s-width"  ><!-- select tag for children quantity -->
+										<option value="0"  onclick="display_child_div()">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select><br>						
+								<div id="child-group">
+									<div id="child-group1"></div><!-- div for 1 child-->
+									<div id="child-group2-1"></div><!-- div for 2-1 child-->
+									<div id="child-group2-2"></div><!-- div for 2-2 child-->
+									<div id="child-group3-1"></div><!-- div for 3-1 child-->
+									<div id="child-group3-2"></div><!-- div for 3-2 child-->
+									<div id="child-group3-3"></div><!-- div for 3-3 child-->
+									<div id="child-group4-1"></div><!-- div for 4-1 child-->
+									<div id="child-group4-2"></div><!-- div for 4-2 child-->
+									<div id="child-group4-3"></div><!-- div for 4-3 child-->
+									<div id="child-group4-4"></div><!-- div for 4-4 child-->
+								</div>
+							</center>
+						</div>
+					</center>
+
+					
+
+					<center>
+						<h1>Preferred Travel Date ? </h1>
+						<input required class="inloc" type="date" name="prefered_travel_date"  ><br><br>
+						<h1>Budget Range ? </h1>
+						<select class="inloc" name="budget_range"><!-- select tag for budget ranges-->
+							<option value="1000-2000">1000-2000</option>
+							<option value="3000-4000">3000-4000</option>
+							<option value="5000-6000">5000-6000</option>
+							<option value="7000-8000">7000-8000</option>
+							<option value="9000-10000">9000-10000</option>
+							<option value="More_than_1_Lav">More than 1 Lav</option>
+						</select><br><br>
+						<h3>How active? 
+						want to be travelling all the time? Need rest days? Rest days how often? Enjoy strenous activities? Sedentary? </h3>
+						<textarea  required  class="inloc" rows="3" id="how_active" name="textarea" name="how_active"></textarea><p id="phowactive"></p><br><br><!-- textarea tag for how active-->
+					</center>
+					<br><br>
+					<button class="button" onclick="display_preferred_accommodation()" value="Submit">Next</button>
+					<!-- button tag for verified above tags and hide current div and display next div-->
+			</center><!-- inner center tag close here -->
+		</div><!-- first content which is 1 out of 4 close here -->
+		<!-- div has "index" id close here -->
+
+		<!-- ******************************************************************************************* -->
+
+		<div class="hide" id="preferred_accommodation">
+			<div class="container"><!-- part 2 has id "preferred_accommodation" -->
+			<h2><b>Part 2/4</b></h2><!-- Part 2 out of 4 -->
+				<center><!-- inner center tag start here -->
+					<h1>Preferred Accommodation</h1><hr><br>
+						<h1>Prefered Hotel ? </h1>
+						<select class="inloc" name="preferred_accommodation_room" id="preferred_accommodation_room">
+							<option value=""></option><!-- select tag for preferred_accommodation_room-->
+							<option value="Single_room">Single room</option>
+							<option value="Shared_room">Shared room</option>
+							<option value="3star">3 Star</option>
+							<option value="5star">5 Star</option>
+							<option value="7star">7 Star</option>						
+						</select><p id="ppreferred_accommodation_room"></p><br><br>
+
+						<h1>Bed and Breakfast with ? </h1>
+						<select class="inloc" name="preferred_accommodation_bed_breakfast_with" id="preferred_accommodation_bed_breakfast_with"><!-- select tag for preferred_accommodation_bed_breakfast_with-->
+							<option value=""></option>
+							<option value="Bathroom">Bathroom</option>
+							<option value="Shared_Bathroom">Shared_Bathroom</option>					
+						</select><p id="ppreferred_accommodation_bed_breakfast_with"></p><br><br>
+						<h2>Student Accommodation ?&nbsp;&nbsp;<input name="student_accommodation" type="checkbox" id="myCheck"></h2><!-- input checkbox tag for student_accommodation-->
+						<h2>Backpacker's Accommodation ?&nbsp;&nbsp;<input name="backpacker-accommodation" type="checkbox" id="myCheck"></h2><!-- input checkbox  tag for backpacker-accommodation -->
+						<br><br>
+						<button class="button" onclick="preferred_modes_of_travel()" value="Submit">Next</button>
+						<!-- button tag for verified above tags and hide current div and display next div-->
+				</center><!-- inner center tag close here -->
+			</div>
+		</div><!-- first content which is 2 out of 4 close here -->
+		<!-- div has "preferred_accommodation" id close here -->
+
+		<!-- ******************************************************************************************* -->
+		
+		<div class="hide" id="preferred_modes_of_travel"><!-- part 3 has id "preferred_modes_of_travel" -->
+			<div class="container">
+			<h2><b>Part 3/4</b></h2><!-- Part 3 out of 4 -->
+				<center><!-- inner center tag start here -->
+					<h1>Preferred Modes of Travel</h1><hr>
+						<h1>Air</h1>
+						<select class="inloc" name="preferred_modes_of_travel_air" id="preferred_modes_of_travel_air">
+							<!-- select tag for preferred_modes_of_travel_air-->
+							<option value=""></option>
+							<option value="Jet">Jet</option>
+							<option value="Turbo-Prop">Turbo-Prop</option>
+							<option value="Helicopter">Helicopter</option>					
+						</select><p id="ppreferred_modes_of_travel_air"></p>
+						<h1>Water</h1>
+						<select class="inloc" name="preferred_modes_of_travel_water" id="preferred_modes_of_travel_water">
+							<!-- select tag for preferred_modes_of_travel_water-->
+							<option value=""></option>
+							<option value="Cruise">Cruise</option>
+							<option value="Sail">Sail</option>
+							<option value="Barge">Barge</option>					
+							<option value="Small">Small</option>					
+							<option value="Large">Large</option>					
+						</select><p id="ppreferred_modes_of_travel_water"></p>
+
+						<h1>Other ? </h1>
+						<h2>Train&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="travel_mode"></h2><!-- input radio button tag all has same name if we wants to select 1 out of 10-->
+						<h2>Bus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input  type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<h2>Car&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input  type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<h2>Horse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input  type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<h2>Donkey/Mule&nbsp;
+							<input  type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<h2>Camel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input  type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<h2>Llama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input  type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<h2>Walking&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input  type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<h2>Other&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="travel_mode"></h2><!-- input radio button tag -->
+						<br><br>
+						<button class="button" onclick="preferred_travel_environment2()">Next</button>
+						<!-- button tag for verified above tags and hide current div and display next div-->
+				</center><!-- inner center tag close here -->
+			</div>
+		</div><!-- first content which is 3 out of 4 close here -->
+		<!-- div has "preferred_modes_of_travel" id close here -->
+
+		<!-- ******************************************************************************************* -->
+		
+		<div class="hide" id="preferred_travel_environment"><!-- part 3 has id "preferred_travel_environment" -->
+			<div class="container">
+			<h2><b>Part 4/4</b></h2><!-- Part 4 out of 4 -->
+				<center><!-- inner center tag start here -->
+					<h1>Preferred Destinations</h1><hr><br>
+						<h1>Africa</h1>
+						<select required class="inloc" name="preferred_destination_africa" id="preferred_destination_africa"  >
+							<!-- select tag for preferred_destination_africa-->
+							<option value=""></option>
+							<option value="Eastern">Eastern</option>
+							<option value="Middle">Middle</option>
+							<option value="Northen">Northen</option>
+							<option value="Western">Western</option>
+							<option value="Southern">Southern</option>						
+						</select><p id="ppreferred_destination_africa"></p>
+						<h1>Asia</h1>
+						<select class="inloc" name="preferred_destination_asia" id="preferred_destination_asia" >
+							<!-- select tag for preferred_destination_asia-->
+							<option value=""></option>
+							<option value="India">India</option>
+							<option value="Malaysia">Malaysia</option>
+							<option value="Japan">Japan</option>
+							<option value="North_Korea">North Korea</option>
+							<option value="Turkmenistan">Turkmenistan</option>	
+							<option value="Nepal">SouNepalthern</option>						
+						</select><p id="ppreferred_destination_asia"></p>
+
+						<h1>Central America </h1>
+						<select class="inloc" name="preferred_destination_central_america" id="preferred_destination_central_america" ><!-- select tag for preferred_destination_central_america-->
+							<option value=""></option>
+							<option value="Mexico">Mexico</option>
+							<option value="Honduras">Honduras</option>
+							<option value="Panama">Panama</option>					
+						</select><p id="ppreferred_destination_central_america"></p>
+
+						<h1>Europe</h1>
+						<select class="inloc" name="preferred_destination_europe" id="preferred_destination_europe" >
+							<!-- select tag for preferred_destination_europe-->
+							<option value=""></option>
+							<option value="Russia">Russia</option>
+							<option value="Iceland">Iceland</option>
+							<option value="Belarus">Belarus</option>	
+							<option value="Norway">Norway</option>	
+							<option value="Switzerland">Switzerland</option>	
+							<option value="United_Kingdom">United Kingdom</option>					
+						</select><p id="ppreferred_destination_europe"></p>
+
+						<h1>Europe Union</h1>
+						<select class="inloc" name="preferred_destination_europe_union" id="preferred_destination_europe_union" ><!-- select tag for preferred_destination_europe_union-->
+							<option value=""></option>
+							<option value="Belgium">Belgium</option>
+							<option value="France">France</option>
+							<option value="Spain">Spain</option>	
+							<option value="Sweden">Sweden</option>	
+							<option value="Ireland">Ireland</option>					
+						</select><p id="ppreferred_destination_europe_union"></p>
+
+						<h1>Middle East </h1>
+						<select class="inloc" name="preferred_destination_middle_east" id="preferred_destination_middle_east" >
+							<!-- select tag for preferred_destination_middle_east-->
+							<option value=""></option>
+							<option value="Bahrain">Bahrain</option>
+							<option value="Iraq">Iraq</option>
+							<option value="Syria">Syria</option>	
+							<option value="Yemen">Yemen</option>						
+						</select><p id="ppreferred_destination_middle_east"></p>
+
+						<h1>North America  </h1>
+						<select class="inloc" name="preferred_destination_north_america" id="preferred_destination_north_america" ><!-- select tag for preferred_destination_north_america-->
+							<option value=""></option>
+							<option value="Canada">Canada</option>
+							<option value="Greenland">Greenland</option>
+							<option value="U.S.A.">U.S.A.</option>						
+						</select><p id="ppreferred_destination_north_america"></p>
+
+						<h1>Oceania </h1>
+						<select class="inloc" name="preferred_destination_oceania" id="preferred_destination_oceania" >
+							<!-- select tag for preferred_destination_oceania-->
+							<option value=""></option>
+							<option value="Papua_new_guinea">Papua new guinea</option>
+							<option value="Samoa">Samoa</option>
+							<option value="New_zealand">New zealand</option>
+							<option value="Micronesia">Micronesia</option>
+							<option value="Australia">Australia</option>						
+						</select><p id="ppreferred_destination_oceania"></p>
+
+						<h1>South America </h1>
+						<select class="inloc" name="preferred_destination_south_america" id="preferred_destination_south_america" ><!-- select tag for preferred_destination_south_america-->
+							<option value=""></option>
+							<option value="Bolivia">Bolivia</option>
+							<option value="Peru">Peru</option>
+							<option value="Colombia">Colombia</option>
+							<option value="Venezeula">Venezeula</option>						
+						</select><p id="ppreferred_destination_south_america"></p>
+
+						<h1>The Caribbean </h1>
+						<select class="inloc" name="preferred_destination_the_caribbean" id="preferred_destination_the_caribbean" ><!-- select tag for preferred_destination_the_caribbean-->
+							<option value=""></option>
+							<option value="Cuba">Cuba</option>
+							<option value="Barbados">Barbados</option>
+							<option value="Jamaica">Jamaica</option>
+							<option value="Curacao">Curacao</option>						
+						</select><p id="ppreferred_destination_the_caribbean"></p>
+						<br><br>
+						<input class="button" type="Submit" name="Submit" value="Submit">
+						<!-- input submit tag for verified above tags and link with url that we written in action field which is in form tag-->
+					</form><!-- form tag close here -->
+				</center><!-- inner center tag close here -->
+			</div>
+		</div><!-- first content which is 3 out of 4 close here -->
+		<!-- div has "preferred_modes_of_travel" id close here -->
+
+
+	</center><!-- outer center tag close here -->
+</body><!-- body tag ends here -->
+</html><!-- html tag ends here -->

@@ -1,0 +1,103 @@
+body{	
+    background-color: #ffcf004d;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+.container{
+	width: 30%;
+	border: 0px solid grey;
+}
+.inloc{
+    width: 86%;
+    border: none;
+    border-bottom: 2px solid blue; 
+    padding: 2% 2%;
+    background-color: white;
+    opacity: 1;
+    border-radius: 3%;
+    margin-top: 5%;
+    font-size: 105%;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border-top: 1px solid #80808066;
+    border-right: 1px solid #80808066;
+    border-left: 1px solid #80808066;
+}
+.inloc::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+.datepicker{/*
+    padding-top: 5%;
+    padding-bottom: 4%;*/
+    width: 40%;
+    padding: 5% 4%;
+    border-bottom: 2px solid yellow;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    border-radius: 4%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+.datepicker::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+}
+.dropdown{
+    width: 40%;
+    padding: 5% 4%;
+    border-bottom: 2px solid yellow;
+    border-top: none;
+    border-radius: 4%;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+.button {
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #ffffcc; 
+    border: 2px solid #ffff66;
+}
+.button1 {
+    margin-top: 7%;
+    width: 86%;
+    background-color: #ffffcc; 
+    color: black; 
+    border: 2px solid #ffff66;
+    border-radius: 4%;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.button1:hover {
+    background-color: #ffff66;
+    color: black;
+}
+.hide {
+  display: none;
+}
+.s-width{
+	width: 20%;
+}
+.s-color-red{
+	color: red;
+}

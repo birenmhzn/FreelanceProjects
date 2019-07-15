@@ -1,0 +1,13 @@
+----> Hi
+----> Read Me file for this website project.
+----> HTML * CSS
+
+$: Whole code that used is self written code not copy pasted from any website.
+
+$: Images that are used to developed this website project are copyright free and free to download.
+
+$: All images are downloaded from www.pixabay.com
+
+$: Used HTML and CSS website development programming languages to developed this website project.
+
+$: There is total five HTML pages and one css file used to developed website.

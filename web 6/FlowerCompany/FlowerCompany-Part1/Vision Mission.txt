@@ -1,0 +1,37 @@
+----> Hi
+----> Read Me file for this website project.
+----> HTML * CSS
+
+----> VISION & MISSION
+
+Vision of Myflower is to supply more beautiful and more varieties of flowers to our happy customers.
+
+We have 10 lacs happy customers and our mission is to make 25 lacs happy customers till year end.
+
+Our scientists also doing research on extinct species of flowers all over the world, So as soon as possible we introduce new species to our customers.
+
+MyFlower also try to expand business in african territory.
+
+We introduce one contact number so anyone can order flowers.
+
+We increase our delivery team so you can get your delivery ASAP.  
+
+----> REQUIREMENTS OF PROJECT
+
+Develop website for online selling flower company business.
+
+Develop static website using only HTML & CSS.
+
+Develop one landing page that is homepage for online selling flower company business.
+
+The website must containes static user registration HTML form.
+
+Develop Registration form with validations.
+
+Also develop some another pages for the online selling flower company business website like about us and contact us.
+
+Write 20-50 wiords of Vision/Mission statement for online selling flower company business.
+
+Used attractive images for website.
+
+Develop one professional static website that looks nice. 
