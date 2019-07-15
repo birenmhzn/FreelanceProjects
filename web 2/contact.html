@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+	    <link href="css/style.css" rel="stylesheet">
+	</head>
+	<body onload='document.form1.text1.focus()'>
+		<table class="table1">
+			<tr>
+				<td><a href="index.html"><img src="img/logo.png" class="round-img" width="100px" height="100px"></a></td>
+				<td class="header padding-top">
+					<ul class="nav-margin-top">				
+					    <li class="spleft"><a href="index.html">Home</a></li>
+					    <li><a href="about.html">About</a></li>
+					    <li><a href="news.html">News</a></li>
+					    <li class="dropdown"><a>Product</a>
+					    	<div class="dropdown-content">
+							    <a href="cheez.html">Cheez</a>
+							    <a href="veg.html">Veg</a>
+							    <a href="non-veg.html">Non-Veg</a>
+							</div>
+					    </li>
+					    <li><a href="contact.html" class="active">Contact</a></li>
+					    <li class="dropdown"><a>Store Location</a>
+						    <div class="dropdown-content">
+							    <a href="newyork.html">New York</a>
+							    <a href="newjercy.html">New Jercy</a>
+							    <a href="losangeles.html">Los Angeles</a>
+							    <a href="santamonica.html">Santa Monica</a>
+							    <a href="chicago.html">Chicago</a>
+							</div>
+						</li>
+					</ul>	
+				</td>
+			</tr>
+		</table>
+
+		<center>
+			<div class="contact-container">
+				<div class="mail">
+					<h1>Give Feedback</h1>
+					<form name="form1" action="#"> 
+						<ul class="contact-ul">
+							<li><input type='text' name='text1' class="contact-input" placeholder="Email" /></li><br>
+							<li><textarea cols="3" class="contact-input" placeholder="Type You Feedback"></textarea></li>
+							<li>&nbsp;</li>
+							<li class="submit"><input class="contact-input" type="submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)"/></li>
+							<li>&nbsp;</li>
+						</ul>
+					</form>
+				</div>
+				<script src="js/email-validation.js"></script>
+			</div>
+		</center>
+
+		<table class="contact-table2">
+			<tr>
+				<td><b>Email :</b> enquiry@mypizza.com</td>
+				<td><b>Phone :</b> +91 8765656565</td>
+				<td><b>Address :</b> My Pizza Ltd., Shop 9, Street highway 23, astrict, NZ. </td>
+			</tr>
+		</table>
+
+		<br><br>
+
+		<table class="table3">
+				<tr>
+					<td class="table3-td-part">
+						<p>Copyright © My Pizza Ltd. 2015 All Rights Reserved.</p>
+					</td>
+					<td class="table3-td-part1">
+						<p><a href="tandc.html" class="table3-a-style">Terms And Condition</a></p>
+					</td>
+					<td class="table3-td-part">
+						<table>
+							<tr>
+								<td>
+									<a href="#"><img src="img/fb.png" width="50%" class="round-img"></a>
+								</td>
+								<td>
+									<a href="#"><img src="img/twitter.png" width="50%" class="round-img"></a>
+								</td>
+								<td>
+									<a href="#"><img src="img/youtube.png" width="50%" class="round-img"></a>
+								</td>
+								<td>
+									<a href="#"><img src="img/google.png" width="50%" class="round-img"></a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>
